@@ -1,0 +1,14 @@
+<div class = "button-container">
+<div *ngFor="let currentCategory of listOfCategories">
+  <button mat-raised-button color="primary" (click)="selectCategory(currentCategory.id)">
+    Category {{ currentCategory.name }}
+  </button>
+</div>
+
+<button mat-raised-button color="primary" (click)="resetFilters()">
+  Reset button
+</button>
+<div>
+  <button mat-raised-button color="primary" routerLink="/add">Add</button>
+</div>
+</div>

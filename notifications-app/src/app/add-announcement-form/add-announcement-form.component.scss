@@ -1,0 +1,20 @@
+.form-container{
+  justify-content: center;
+  display:flex;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+  }
+  
+  .matDesign {
+    width: 100%;
+  }
+
+.button-container {
+  display:flex;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,66 @@
+// .announcement-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 20px;
+//   width: 900px;
+//   border: 2px solid #8531a9;
+//   border-radius: 25px;
+//   padding: 30px;
+//   .title {
+//     font-size: 20px;
+//     font-weight: 700;
+//   }
+//   .author {
+//     align-self: flex-start;
+//     font-weight: 600;
+//   }
+
+//   img {
+//     max-width: 90%;
+//     max-height: 90%;
+//     object-fit: cover;
+//     border-radius: 25px;
+//   }
+// }
+
+.card-container{
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #8531a9;
+  border-radius: 15px;
+}
+
+.avatar {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/009/734/564/original/default-avatar-profile-icon-of-social-media-user-vector.jpg');
+  background-size: cover;
+}
+
+.title {
+      font-size: 20px;
+}
+.author {
+  align-self: flex-start;
+  color: gray;
+}
+
+.message {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-container{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 25px;
+}
+
+.image {
+  border: 1px solid #424242;
+  border-radius: 10px;
+  margin: 5px;
+}

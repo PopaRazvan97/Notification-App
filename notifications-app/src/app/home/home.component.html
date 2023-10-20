@@ -1,0 +1,11 @@
+<div class="home-container">
+  <app-categories (selectCategoryEmitter)="filterAnnouncements($event)"/>
+  
+  <p>
+    {{notificationMessage}}
+  </p>
+
+  <div *ngFor="let announcement of filteredAnnouncements" class="announcements">
+    <app-announcement [announcement]="announcement"> </app-announcement>
+  </div>
+</div>

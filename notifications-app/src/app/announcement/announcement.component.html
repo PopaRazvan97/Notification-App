@@ -1,0 +1,17 @@
+<mat-card class="card-container">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar"></div>
+      <mat-card-title class="title">{{ announcement.title }}</mat-card-title>
+      <mat-card-subtitle class="author">{{ announcement.author | authorpipe }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="image" src="{{ announcement.imageUrl }}" alt="announcement image" />
+    <mat-card-content>
+      <p class="message">{{ announcement.message }}</p>
+    </mat-card-content>
+    <div class="button-container">
+      <mat-card-actions>
+        <button mat-raised-button color="primary"  [routerLink]="['/edit', announcement.id]">Edit</button>
+        <button mat-raised-button color="primary" (click)="onDelete(announcement.id)">Delete</button>
+      </mat-card-actions>
+    </div>
+</mat-card>
